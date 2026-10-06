@@ -29,12 +29,12 @@
     <style>
         @keyframes marquee {
             0% { transform: translateX(0%); }
-            100% { transform: translateX(-100%); }
+            100% { transform: translateX(-50%); }
         }
         .animate-marquee {
             display: flex;
-            min-width: max-content;
-            animation: marquee 40s linear infinite;
+            width: max-content;
+            animation: marquee 35s linear infinite;
         }
         .animate-marquee:hover {
             animation-play-state: paused;
@@ -140,71 +140,75 @@
         </div>
     </section>
 
-    <!-- Carrusel de Clientes -->
-    <section id="clientes" class="py-16 border-y border-gray-800 bg-darkBg overflow-hidden">
+    <!-- Carrusel de Clientes (Unificado, Más Grande y Fluido) -->
+    <section id="clientes" class="py-20 border-y border-gray-800 bg-darkBg overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 mb-12 text-center text-sm font-bold text-gray-500 uppercase tracking-widest">
             Empresas que confían en nosotros
         </div>
-        <div class="relative flex overflow-x-hidden group">
-            
-            <!-- TIRA DE LOGOS 1 -->
-            <div class="animate-marquee flex gap-10 items-center px-6">
-                <img src="megacars.png" alt="Megacars" class="h-16 w-auto object-contain rounded-xl opacity-75 hover:opacity-100 transition-opacity">
+        
+        <div class="relative w-full overflow-hidden flex">
+            <!-- TIRA ÚNICA DUPLICADA PARA LOOP PERFECTO SIN CORTES -->
+            <div class="animate-marquee flex items-center gap-16">
                 
-                <img src="rondi.png" alt="Rondi" class="h-16 w-auto object-contain rounded-xl opacity-75 hover:opacity-100 transition-opacity">
-                
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity">
-                    <img src="sendbox.png" alt="Sendbox" class="max-h-full w-auto object-contain">
+                <!-- BLOQUE DE LOGOS (1) -->
+                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                    <img src="megacars.png" alt="Megacars" class="h-20 w-auto object-contain filter brightness-125">
+                </div>
+                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                    <img src="rondi.png" alt="Rondi" class="h-20 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="sendbox.png" alt="Sendbox" class="h-16 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="loccitane.png" alt="L'Occitane" class="h-14 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-gray-900 border border-gray-700 rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="catbla.png" alt="Catbla" class="h-16 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="newcei.png" alt="Newcei" class="h-16 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                    <img src="admina.png" alt="Admina" class="h-20 w-auto object-contain filter invert">
+                </div>
+                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="velay.png" alt="Velay" class="h-16 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="cordial.png" alt="Cordial" class="h-16 w-auto object-contain">
                 </div>
 
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity">
-                    <img src="loccitane.png" alt="L'Occitane" class="max-h-full w-auto object-contain">
+                <!-- BLOQUE DUPLICADO EXACTO (2) PARA BUCLE INFINITO SIN PAUSAS -->
+                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                    <img src="megacars.png" alt="Megacars" class="h-20 w-auto object-contain filter brightness-125">
+                </div>
+                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                    <img src="rondi.png" alt="Rondi" class="h-20 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="sendbox.png" alt="Sendbox" class="h-16 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="loccitane.png" alt="L'Occitane" class="h-14 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-gray-900 border border-gray-700 rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="catbla.png" alt="Catbla" class="h-16 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="newcei.png" alt="Newcei" class="h-16 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                    <img src="admina.png" alt="Admina" class="h-20 w-auto object-contain filter invert">
+                </div>
+                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="velay.png" alt="Velay" class="h-16 w-auto object-contain">
+                </div>
+                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                    <img src="cordial.png" alt="Cordial" class="h-16 w-auto object-contain">
                 </div>
 
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity bg-gray-900">
-                    <img src="catbla.png" alt="Catbla" class="max-h-full w-auto object-contain">
-                </div>
-
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity">
-                    <img src="newcei.png" alt="Newcei" class="max-h-full w-auto object-contain">
-                </div>
-
-                <img src="admina.png" alt="Admina" class="h-16 w-auto object-contain rounded-xl opacity-75 hover:opacity-100 transition-opacity">
-
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity">
-                    <img src="velay.png" alt="Velay" class="max-h-full w-auto object-contain">
-                </div>
-
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity">
-                    <img src="cordial.png" alt="Cordial" class="max-h-full w-auto object-contain">
-                </div>
             </div>
-
-            <!-- TIRA DE LOGOS 2 -->
-            <div class="animate-marquee flex gap-10 items-center px-6" aria-hidden="true">
-                <img src="megacars.png" alt="Megacars" class="h-16 w-auto object-contain rounded-xl opacity-75 hover:opacity-100 transition-opacity">
-                <img src="rondi.png" alt="Rondi" class="h-16 w-auto object-contain rounded-xl opacity-75 hover:opacity-100 transition-opacity">
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity">
-                    <img src="sendbox.png" alt="Sendbox" class="max-h-full w-auto object-contain">
-                </div>
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity">
-                    <img src="loccitane.png" alt="L'Occitane" class="max-h-full w-auto object-contain">
-                </div>
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity bg-gray-900">
-                    <img src="catbla.png" alt="Catbla" class="max-h-full w-auto object-contain">
-                </div>
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity">
-                    <img src="newcei.png" alt="Newcei" class="max-h-full w-auto object-contain">
-                </div>
-                <img src="admina.png" alt="Admina" class="h-16 w-auto object-contain rounded-xl opacity-75 hover:opacity-100 transition-opacity">
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity">
-                    <img src="velay.png" alt="Velay" class="max-h-full w-auto object-contain">
-                </div>
-                <div class="h-16 bg-white rounded-xl shadow-md px-4 py-2 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity">
-                    <img src="cordial.png" alt="Cordial" class="max-h-full w-auto object-contain">
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -231,7 +235,7 @@
             <div>
                 <h4 class="text-white font-bold mb-4">Zona de cobertura</h4>
                 <ul class="space-y-2 text-sm text-gray-400">
-                    <li><i class="fa-solid fa-location-dot mr-2 text-brandBlue"></i> Ciudad Madero</li>
+                    <li><i class="fa-solid fa-location-dot mr-2 text-brandBlue"></i> Villa Madero</li>
                     <li><i class="fa-solid fa-location-dot mr-2 text-brandBlue"></i> Tapiales</li>
                     <li><i class="fa-solid fa-location-dot mr-2 text-brandBlue"></i> La Tablada</li>
                     <li><i class="fa-solid fa-location-dot mr-2 text-brandBlue"></i> CABA</li>
