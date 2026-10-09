@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-pt-20">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +48,7 @@
     <nav class="fixed w-full bg-darkBg/90 backdrop-blur-md z-50 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="text-2xl font-bold tracking-tight text-white flex items-center gap-3">
-                <img src="rlm.png" alt="Logo rlm" class="h-10 w-10 object-contain shrink-0 mix-blend-screen filter invert brightness-250">
+                <img src="rlm.png" alt="Logo rlm" class="h-10 w-10 object-contain shrink-0 mix-blend-screen invert brightness-[2.5]">
                 <span>rlm<span class="text-brandBlue">.com.ar</span></span>
             </a>
             <div class="hidden md:flex space-x-8">
@@ -59,158 +59,163 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
-        <div class="flex-1 text-center md:text-left">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
-                Soluciones <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandBlue to-cyan-400">Tecnológicas</span> rlm
-            </h1>
-            <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl">
-                Administración de infraestructura IT, entornos cloud y redes corporativas. Soluciones ágiles para que tu empresa opere sin interrupciones.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href="#servicios" class="px-8 py-4 bg-brandBlue text-white rounded-lg font-semibold hover:bg-brandHover transition-all shadow-lg shadow-brandBlue/30 text-center">Ver Servicios</a>
-                <a href="https://wa.me/5491140544626" target="_blank" class="px-8 py-4 bg-cardBg text-white border border-gray-700 rounded-lg font-semibold hover:bg-gray-700 transition-all text-center flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-green-400"></i> Contactar
-                </a>
-            </div>
-        </div>
-        <div class="flex-1 flex justify-center md:justify-end">
-    <div class="inline-block">
-        <img src="rlm.png" alt="rlm" class="w-56 h-56 md:w-72 md:h-72 object-contain mix-blend-screen filter invert brightness-250 drop-shadow-2xl">
-    </div>
-</div>
-    </section>
-
-    <!-- Servicios Section -->
-    <section id="servicios" class="py-20 bg-[#0b1120] px-6">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 border-l-4 border-brandBlue pl-4">Lo que hacemos</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card 1 -->
-                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
-                    <i class="fa-solid fa-desktop text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="text-xl font-bold text-white mb-3">Soporte técnico IT</h3>
-                    <p class="text-sm text-gray-400 mb-6 line-clamp-3">Mantenimiento y reparación de PCs y estaciones de trabajo. Resolvemos fallas de hardware y software rápidamente.</p>
-                    <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Soporte%20IT" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
-                    <i class="fa-solid fa-network-wired text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="text-xl font-bold text-white mb-3">Redes y conectividad</h3>
-                    <p class="text-sm text-gray-400 mb-6 line-clamp-3">Diagnosticamos y solucionamos problemas de internet. Diseñamos e instalamos redes Wi-Fi y cableadas eficientes.</p>
-                    <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Redes" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
-                    <i class="fa-solid fa-shield-halved text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="text-xl font-bold text-white mb-3">Seguridad</h3>
-                    <p class="text-sm text-gray-400 mb-6 line-clamp-3">Instalación de sistemas completos de videovigilancia y alarmas. Proteja sus instalaciones con monitoreo remoto.</p>
-                    <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Seguridad" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
-                    <i class="fa-solid fa-lightbulb text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="text-xl font-bold text-white mb-3">Domótica corporativa</h3>
-                    <p class="text-sm text-gray-400 mb-6 line-clamp-3">Transformamos sus oficinas en espacios inteligentes. Automatizamos iluminación y climatización para ahorrar energía.</p>
-                    <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Domótica" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
-                    <i class="fa-solid fa-database text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="text-xl font-bold text-white mb-3">Migraciones y bases de datos</h3>
-                    <p class="text-sm text-gray-400 mb-6 line-clamp-3">Trasladamos sus sistemas y servidores de forma segura. Administramos y optimizamos sus bases de datos.</p>
-                    <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Migraciones" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
-                    <i class="fa-solid fa-server text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="text-xl font-bold text-white mb-3">Gestión de infraestructura</h3>
-                    <p class="text-sm text-gray-400 mb-6 line-clamp-3">Administramos integralmente sus recursos tecnológicos. Soporte de todos sus equipos para que usted se enfoque en su empresa.</p>
-                    <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Infraestructura" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Soluciones <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandBlue to-cyan-400">Tecnológicas</span> rlm
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl">
+                    Administración de infraestructura IT, entornos cloud y redes corporativas. Soluciones ágiles para que tu empresa opere sin interrupciones.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#servicios" class="px-8 py-4 bg-brandBlue text-white rounded-lg font-semibold hover:bg-brandHover transition-all shadow-lg shadow-brandBlue/30 text-center">Ver Servicios</a>
+                    <a href="https://wa.me/5491140544626" target="_blank" class="px-8 py-4 bg-cardBg text-white border border-gray-700 rounded-lg font-semibold hover:bg-gray-700 transition-all text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-400"></i> Contactar
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="flex-1 flex justify-center md:justify-end">
+                <div class="inline-block">
+                    <img src="rlm.png" alt="rlm" class="w-56 h-56 md:w-72 md:h-72 object-contain mix-blend-screen invert brightness-[2.5] drop-shadow-2xl">
+                </div>
+            </div>
+        </section>
 
-    <!-- Carrusel de Clientes (Unificado, Más Grande y Fluido) -->
-    <section id="clientes" class="py-20 border-y border-gray-800 bg-darkBg overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 mb-12 text-center text-sm font-bold text-gray-500 uppercase tracking-widest">
-            Empresas que confían en nosotros
-        </div>
-        
-        <div class="relative w-full overflow-hidden flex">
-            <!-- TIRA ÚNICA DUPLICADA PARA LOOP PERFECTO SIN CORTES -->
-            <div class="animate-marquee flex items-center gap-16">
+        <!-- Servicios Section -->
+        <section id="servicios" class="py-20 bg-[#0b1120] px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 border-l-4 border-brandBlue pl-4">Lo que hacemos</h2>
                 
-                <!-- BLOQUE DE LOGOS (1) -->
-                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
-                    <img src="megacars.png" alt="Megacars" class="h-20 w-auto object-contain filter brightness-125">
-                </div>
-                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
-                    <img src="rondi.png" alt="Rondi" class="h-20 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="sendbox.png" alt="Sendbox" class="h-16 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="loccitane.png" alt="L'Occitane" class="h-14 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-gray-900 border border-gray-700 rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="catbla.png" alt="Catbla" class="h-16 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="newcei.png" alt="Newcei" class="h-16 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
-                    <img src="admina.png" alt="Admina" class="h-20 w-auto object-contain filter invert">
-                </div>
-                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="velay.png" alt="Velay" class="h-16 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="cordial.png" alt="Cordial" class="h-16 w-auto object-contain">
-                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
+                        <i class="fa-solid fa-desktop text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Soporte técnico IT</h3>
+                        <p class="text-sm text-gray-400 mb-6 line-clamp-3">Mantenimiento y reparación de PCs y estaciones de trabajo. Resolvemos fallas de hardware y software rápidamente.</p>
+                        <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Soporte%20IT" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
+                    </div>
 
-                <!-- BLOQUE DUPLICADO EXACTO (2) PARA BUCLE INFINITO SIN PAUSAS -->
-                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
-                    <img src="megacars.png" alt="Megacars" class="h-20 w-auto object-contain filter brightness-125">
-                </div>
-                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
-                    <img src="rondi.png" alt="Rondi" class="h-20 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="sendbox.png" alt="Sendbox" class="h-16 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="loccitane.png" alt="L'Occitane" class="h-14 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-gray-900 border border-gray-700 rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="catbla.png" alt="Catbla" class="h-16 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="newcei.png" alt="Newcei" class="h-16 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
-                    <img src="admina.png" alt="Admina" class="h-20 w-auto object-contain filter invert">
-                </div>
-                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="velay.png" alt="Velay" class="h-16 w-auto object-contain">
-                </div>
-                <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
-                    <img src="cordial.png" alt="Cordial" class="h-16 w-auto object-contain">
-                </div>
+                    <!-- Card 2 -->
+                    <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
+                        <i class="fa-solid fa-network-wired text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Redes y conectividad</h3>
+                        <p class="text-sm text-gray-400 mb-6 line-clamp-3">Diagnosticamos y solucionamos problemas de internet. Diseñamos e instalamos redes Wi-Fi y cableadas eficientes.</p>
+                        <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Redes" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
+                    </div>
 
+                    <!-- Card 3 -->
+                    <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
+                        <i class="fa-solid fa-shield-halved text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Seguridad</h3>
+                        <p class="text-sm text-gray-400 mb-6 line-clamp-3">Instalación de sistemas completos de videovigilancia y alarmas. Proteja sus instalaciones con monitoreo remoto.</p>
+                        <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Seguridad" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
+                        <i class="fa-solid fa-lightbulb text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Domótica corporativa</h3>
+                        <p class="text-sm text-gray-400 mb-6 line-clamp-3">Transformamos sus oficinas en espacios inteligentes. Automatizamos iluminación y climatización para ahorrar energía.</p>
+                        <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Domótica" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
+                        <i class="fa-solid fa-database text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Migraciones y bases de datos</h3>
+                        <p class="text-sm text-gray-400 mb-6 line-clamp-3">Trasladamos sus sistemas y servidores de forma segura. Administramos y optimizamos sus bases de datos.</p>
+                        <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Migraciones" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bg-cardBg p-8 rounded-2xl border border-gray-800 hover:border-brandBlue/50 transition-all group">
+                        <i class="fa-solid fa-server text-3xl text-brandBlue mb-6 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Gestión de infraestructura</h3>
+                        <p class="text-sm text-gray-400 mb-6 line-clamp-3">Administramos integralmente sus recursos tecnológicos. Soporte de todos sus equipos para que usted se enfoque en su empresa.</p>
+                        <a href="https://wa.me/5491140544626?text=Hola,%20necesito%20info%20sobre%20Infraestructura" target="_blank" class="text-sm font-semibold text-white bg-gray-700 px-4 py-2 rounded-lg hover:bg-brandBlue transition-colors w-full inline-block text-center">Consultar</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Carrusel de Clientes -->
+        <section id="clientes" class="py-20 border-y border-gray-800 bg-darkBg overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 mb-12 text-center text-sm font-bold text-gray-500 uppercase tracking-widest">
+                Empresas que confían en nosotros
+            </div>
+            
+            <div class="relative w-full overflow-hidden flex">
+                <div class="animate-marquee flex">
+                    
+                    <!-- BLOQUE DE LOGOS (1) -->
+                    <div class="flex items-center gap-16 pr-16 shrink-0">
+                        <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                            <img src="megacars.png" alt="Megacars" class="h-20 w-auto object-contain brightness-125">
+                        </div>
+                        <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                            <img src="rondi.png" alt="Rondi" class="h-20 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="sendbox.png" alt="Sendbox" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="loccitane.png" alt="L'Occitane" class="h-14 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-gray-900 border border-gray-700 rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="catbla.png" alt="Catbla" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="newcei.png" alt="Newcei" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                            <img src="admina.png" alt="Admina" class="h-20 w-auto object-contain invert">
+                        </div>
+                        <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="velay.png" alt="Velay" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="cordial.png" alt="Cordial" class="h-16 w-auto object-contain">
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE DUPLICADO EXACTO (2) PARA BUCLE INFINITO SIN PAUSAS -->
+                    <div class="flex items-center gap-16 pr-16 shrink-0">
+                        <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                            <img src="megacars.png" alt="Megacars" class="h-20 w-auto object-contain brightness-125">
+                        </div>
+                        <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                            <img src="rondi.png" alt="Rondi" class="h-20 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="sendbox.png" alt="Sendbox" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="loccitane.png" alt="L'Occitane" class="h-14 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-gray-900 border border-gray-700 rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="catbla.png" alt="Catbla" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="newcei.png" alt="Newcei" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-white/5 border border-gray-800 rounded-2xl px-8 py-3 flex items-center justify-center shrink-0 shadow-lg">
+                            <img src="admina.png" alt="Admina" class="h-20 w-auto object-contain invert">
+                        </div>
+                        <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="velay.png" alt="Velay" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="h-28 bg-white rounded-2xl shadow-xl px-8 py-3 flex items-center justify-center shrink-0">
+                            <img src="cordial.png" alt="Cordial" class="h-16 w-auto object-contain">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer / Contacto -->
     <footer id="contacto" class="bg-[#080d14] pt-16 pb-8 px-6 border-t border-brandBlue/30">
@@ -238,7 +243,6 @@
                     <li><i class="fa-solid fa-location-dot mr-2 text-brandBlue"></i> CABA</li>
                     <li><i class="fa-solid fa-location-dot mr-2 text-brandBlue"></i> Santa Fe</li>
                     <li><i class="fa-solid fa-location-dot mr-2 text-brandBlue"></i> Tablada</li>
-                    <li><i class="fa-solid fa-location-dot mr-2 text-brandBlue"></i> Ciudad Madero</li>
                 </ul>
             </div>
 
